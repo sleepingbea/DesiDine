@@ -1,0 +1,77 @@
+.header {
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/header_img.png') no-repeat center center; /* Centers the background image */
+    background-size: cover; /* Ensures the image covers the full width */
+    position: relative;
+}
+
+
+.header-contents{
+    position: absolute;
+    /* margin-bottom: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 90%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+.header-contents h2 {
+    margin-bottom: 80px;
+    font-weight: 500;
+    color: rgb(3, 59, 148);
+    font-size: max(4.5vw, 22px);
+    text-shadow: 
+        0 0 5px rgb(227, 227, 235), /* Inner glow */
+        0 0 10px rgb(159, 168, 175), 
+        0 0 20px rgb(197, 218, 238), 
+        0 0 30px rgb(198, 217, 230), /* Outer glow */
+        0 0 40px rgb(231, 234, 236), 
+        0 0 50px rgb(220, 228, 232); 
+}
+
+
+.header-contents h5{
+    
+    color: rgb(0, 0, 0);
+    font-size: 1vw;
+    text-shadow: 
+        0 0 5px rgb(195, 197, 224), /* Inner glow */
+        0 0 10px rgb(216, 224, 231), 
+        0 0 20px rgb(197, 218, 238), 
+        0 0 30px rgb(34, 49, 59), /* Outer glow */
+        0 0 40px rgb(35, 61, 78), 
+        0 0 50px rgb(72, 163, 208); 
+}
+.header-contents button{
+
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+}
+@media (max-width:1050px) {
+    .header{
+        height: 38vw;
+    }
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media(max-width:750px){
+    .header-contents{
+        max-width: 55%;
+    }
+    .header-contents p{
+       display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}
